@@ -118,7 +118,7 @@ main {
 li:hover,
 li:focus-within {
     cursor: pointer;
-    border-bottom: 1px double black;
+    text-decoration: underline;
 }
 
 li:focus-within a {
@@ -168,22 +168,51 @@ ul li ul li a{
 .carousel{
     padding-top: 30px;
 }
-.button{
-    border-radius: 50%;
-}
 .carousel-caption{
     color: black;
     padding-bottom: 5%;
     margin-left: 150px;
 }
-.slider_text_top{
-    font-family: "Roboto Medium";
-    font-weight: bold;
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: blue;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
 }
-.slider_text_bottom{
-    font-size: 23px;
-    font-family: "Roboto Light";
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    margin-right: 6px;
+    margin-left: 6px;
+    text-indent: -999px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #d0d0d0;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: opacity .6s ease;
 }
+
+.carousel-indicators{
+    margin-right: 60%;
+    margin-bottom: 2%;
+}
+
 .h1{
     text-align: center;
     padding-top: 100px;
@@ -212,6 +241,11 @@ ul li ul li a{
     font-weight: bold;
     font-size: 20px;
 }
+.btn-group{
+    justify-content: center;
+    margin: auto;
+
+}
 .btn{
     background: #00aeef;
     color: white;
@@ -219,7 +253,8 @@ ul li ul li a{
     border-style: solid;
     border-radius: 4px;
     border-color: rgb(0, 174, 239);
-    margin-left: 100%;
+    justify-content: center;
+    margin: auto;
 }
 .btn:hover{
     border-width: 1px;
@@ -253,18 +288,43 @@ ul li ul li a{
     font-size: 30px;
     background: #f9f9f9;
 }
-@keyframes customer_infinite {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-80%);
-    }
+.carousel-control-prev-icon {
+    background-image: url("/icons/1.png");
 }
+.carousel-control-next-icon {
+    background-image: url("/icons/2.png");
+}
+.customer_btn_perv{
+    background-image: url("/icons/1.png");
+    z-index: 10;
+    width: 23px;
+    height: 40px;
+    border-style: none;
+    background-color: #f9f9f9;
+
+}
+.customer_btn_next{
+    background-image: url("/icons/1.png");
+    z-index: 10;
+    width: 23px;
+    height: 40px;
+    border-style: none;
+    background-color: #f9f9f9;
+    margin-left: 2%;
+}
+/*@keyframes customer_infinite {*/
+/*    0% {*/
+/*        transform: translateX(0%);*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateX(-80%);*/
+/*    }*/
+/*}*/
 .customer_infinite span {
     width: 100%;
     display: flex;
     justify-content: space-around;
+
 }
 
 .customer_infinite img {
@@ -332,50 +392,76 @@ ul li ul li a{
 .socials{
     margin-left: 12%;
     margin-bottom: 20%;
+    white-space: nowrap;
 }
 
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-    filter: grayscale(1);
-}
-.fa-youtube:hover{
-    filter: grayscale(0);
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-    filter: grayscale(1);
+.socials div{
+    display:inline-block;
 
 }
-.fa-facebook:hover{
-    filter: grayscale(0);
+
+.youtube {
+    background-image: url("/sosials/gray.png");
+    width: 23px;
+    height: 23px;
+    background-position: -92px 0;
+}
+.youtube:hover{
+    background-image: url("/sosials/color.png");
+    width: 23px;
+    height: 23px;
+    background-position: -92px 0;
 }
 
-.fa-instagram{
-    background: linear-gradient(red,purple);
-    color: white;
-    filter: grayscale(1);
+.facebook {
+    background-image: url("/sosials/gray.png");
+    width: 23px;
+    height: 23px;
+
 }
-.fa-instagram:hover{
-    filter: grayscale(0);
+.facebook:hover{
+    background-image: url("/sosials/color.png");
+    width: 23px;
+    height: 23px;
 }
-.fa-odnoklassniki{
-    background: orange;
-    color: white;
-    filter: grayscale(1);
+
+.instagram{
+    background-image: url("/sosials/gray.png");
+    width: 23px;
+    height: 23px;
+    background-position: -123px 0;
 }
-.fa-odnoklassniki:hover{
-    filter: grayscale(0);
+.instagram:hover{
+    background-image: url("/sosials/color.png");
+    width: 23px;
+    height: 23px;
+    background-position: -123px 0;
 }
-.fa-vk{
-    background: blue;
-    color: white;
-    filter: grayscale(1);
+.odnoklassniki{
+    background-image: url("/sosials/gray.png");
+    width: 23px;
+    height: 23px;
+    background-position: -61px 0;
 }
-.fa-vk:hover{
-    filter: grayscale(0);
+.odnoklassniki:hover{
+    background-image: url("/sosials/color.png");
+    width: 23px;
+    height: 23px;
+    background-position: -61px 0;
+}
+.vk{
+    background-image: url("/sosials/gray.png");
+    width: 23px;
+    height: 23px;
+    background-position: -31px 0;
+;
+
+}
+.vk:hover{
+    background-image: url("/sosials/color.png");
+    width: 23px;
+    height: 23px;
+    background-position: -31px 0;
 }
 
 
