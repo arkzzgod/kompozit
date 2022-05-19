@@ -6,9 +6,6 @@
 a{
     text-decoration: none;
 }
-li{
-    list-style: none;
-}
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -45,9 +42,6 @@ header{
     top: 55px;
     z-index: 127;
 }
-.icon{
-    display: none;
-}
 
 @media screen and(max-width:1500px) {
     nav{
@@ -55,37 +49,12 @@ header{
     }
 
 }
-nav{
-    margin-top: 43px;
-    margin-left: 1000px;
-    font-size: 14px;
-}
-.menu a{
-    font-family: "Roboto";
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-    top: 40px;
-    padding: 5px 59px;
-}
-.menu div a{
-    font-family: "Roboto";
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-    top: 40px;
-    padding: 5px 59px;
-}
 .phone {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     color: #000 !important;
-}
-.menu a:hover{
-    cursor: pointer;
-    border-bottom: 1px double black;
 }
 .contacts{
     background: #00aeef;
@@ -109,6 +78,70 @@ nav{
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px double #00aeef;
+}
+
+nav {
+    margin-left: 60%;
+    margin-top: 1%;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: black;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: black;
+}
+
+li:hover,
+li:focus-within {
+    cursor: pointer;
+    border-bottom: 1px double black;
+}
+
+li:focus-within a {
+    outline: none;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+ul li ul li a{
+    font-size: 13px;
 }
 
 /*Slider styles*/
@@ -238,7 +271,7 @@ nav{
 .customer_infinite {
     margin: 100px auto;
     border: 0px solid #000;
-    max-width: 40%;
+    max-width: 60%;
     overflow: hidden;
 }
 /*Footer styles*/
@@ -275,6 +308,11 @@ nav{
      text-align: left;
      padding-left: 10%;
  }
+
+.socials{
+    margin-left: 12%;
+    margin-bottom: 20%;
+}
 
 .fa-youtube {
     background: #bb0000;
