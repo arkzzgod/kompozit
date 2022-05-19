@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2017 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="29mm" height="21mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2900 2100"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:7.62;stroke-miterlimit:22.9256}
+    .fil2 {fill:none}
+    .fil1 {fill:#FEFEFE}
+    .fil0 {fill:#EBECEC}
+    .fil4 {fill:#B2B3B3}
+    .fil3 {fill:#00A0E3}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="635.31,1892.92 2883.03,1892.92 2883.03,644.19 2312.18,49.55 635.31,49.55 "/>
+  <polygon class="fil1 str0" points="635.31,1892.92 2883.03,1892.92 2883.03,644.19 2312.18,644.19 2312.18,49.55 635.31,49.55 "/>
+  <polygon class="fil1 str0" points="635.31,1892.92 2883.03,1892.92 2883.03,644.19 2312.18,644.19 2312.18,49.55 635.31,49.55 "/>
+  <rect class="fil2 str0" x="1292.6" y="991.57" width="505.64" height="470.02"/>
+  <polygon class="fil2 str0" points="1296.15,414.72 1407,414.72 1444.48,414.72 1444.48,624.98 1623.07,624.98 1623.07,414.72 1649.53,414.72 1801.79,414.72 1801.79,884.74 1296.15,884.74 "/>
+  <polygon class="fil2 str0" points="1912.17,998.69 2059.87,998.69 2059.87,1087.99 2270.13,1087.99 2270.13,998.69 2417.81,998.69 2417.81,1160.43 2275.27,1160.43 2275.27,1339.02 2417.81,1339.02 2417.81,1468.71 1912.17,1468.71 "/>
+  <polygon class="fil1 str0" points="1132.22,1312.22 1205.43,984.27 844.03,1050 15.84,1798.29 304.04,2060.52 "/>
+  <polygon class="fil3 str0" points="1102.81,1338.98 1132.22,1312.22 1005.27,1250.22 988.15,1182.52 909.24,1163.21 844.03,1050 814.42,1076.93 15.84,1798.29 304.04,2060.52 "/>
+  <polygon class="fil1 str0" points="1005.91,1250.8 988.15,1182.52 908.64,1162.31 112.75,1886.47 210.01,1974.97 "/>
+  <polygon class="fil4 str0" points="1205.43,984.27 1036.92,1014.91 1171.38,1136.8 "/>
+ </g>
+</svg>

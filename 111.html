@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            font-family: monospace;
+        }
+
+        ul {
+            background: darkorange;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        li {
+            color: #fff;
+            background: darkorange;
+            display: block;
+            float: left;
+            padding: 1rem;
+            position: relative;
+            text-decoration: none;
+            transition-duration: 0.5s;
+        }
+
+        li a {
+            color: #fff;
+        }
+
+        li:hover,
+        li:focus-within {
+            background: red;
+            cursor: pointer;
+        }
+
+        li:focus-within a {
+            outline: none;
+        }
+
+        ul li ul {
+            background: orange;
+            visibility: hidden;
+            opacity: 0;
+            min-width: 5rem;
+            position: absolute;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            left: 0;
+            display: none;
+        }
+
+        ul li:hover > ul,
+        ul li:focus-within > ul,
+        ul li ul:hover,
+        ul li ul:focus {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+
+        ul li ul li {
+            clear: both;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav role="navigation">
+    <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#" aria-haspopup="true">Two</a>
+            <ul class="dropdown" aria-label="submenu">
+                <li><a href="#">Sub-1</a></li>
+                <li><a href="#">Sub-2</a></li>
+                <li><a href="#">Sub-3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Three</a></li>
+    </ul>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+/*Header styles*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    background: white;
+    display: flex;
+}
+.header_top{
+    font-size: 30px;
+    font-family: "OpenSans Bold";
+    color: rgb(0, 174, 239);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 1.07566968409385,0,0,0.8193206881341,0,0);
+    -webkit-transform: matrix( 1.07566968409385,0,0,0.8193206881341,0,0);
+    -ms-transform: matrix( 1.07566968409385,0,0,0.8193206881341,0,0);
+    position: absolute;
+    padding-left: 18%;
+    top: 22px;
+    z-index: 128;
+}
+.header_bottom {
+    font-size: 11px;
+    font-family: "Roboto Light";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    padding-left: 18.5%;
+    top: 55px;
+    z-index: 127;
+}
+.icon{
+    display: none;
+}
+
+@media screen and(max-width:1500px) {
+    nav{
+        margin-left: 700px;
+    }
+
+}
+nav{
+    margin-top: 43px;
+    margin-left: 1000px;
+    font-size: 14px;
+}
+.menu a{
+    font-family: "Roboto";
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    top: 40px;
+    padding: 5px 59px;
+}
+.menu div a{
+    font-family: "Roboto";
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    top: 40px;
+    padding: 5px 59px;
+}
+.phone {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000 !important;
+}
+.menu a:hover{
+    cursor: pointer;
+    border-bottom: 1px double black;
+}
+.contacts{
+    background: #00aeef;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: rgb(0, 174, 239);
+    font-family: "Roboto";
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    top: 40px;
+    padding: 5px 59px;
+}
+.contacts:hover{
+    border-width: 1px;
+    color: #00aeef;
+    border-color: rgb(0, 174, 239);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px double #00aeef;
+}
+
+/*Slider styles*/
+.carousel{
+    padding-top: 30px;
+}
+.button{
+    border-radius: 50%;
+}
+.carousel-caption{
+    color: black;
+    padding-bottom: 5%;
+    margin-left: 150px;
+}
+.slider_text_top{
+    font-family: "Roboto Medium";
+    font-weight: bold;
+}
+.slider_text_bottom{
+    font-size: 23px;
+    font-family: "Roboto Light";
+}
+.h1{
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Roboto', "Roboto Light";
+    text-align: center;
+}
+.p_h1{
+    font-family: 'Roboto', "Roboto Light";
+    padding-top: 30px;
+    text-align: center;
+}
+.production_h1{
+    font-family: 'Roboto', "Roboto Light";
+    text-align: center;
+    padding-top: 50px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.container{
+    padding-top: 30px;
+    margin-left: 20%;
+}
+.card-text{
+    font-family: "Roboto Regular";
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn{
+    background: #00aeef;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: rgb(0, 174, 239);
+    margin-left: 100%;
+}
+.btn:hover{
+    border-width: 1px;
+    color: #00aeef;
+    border-color: rgb(0, 174, 239);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+.col{
+    margin-left: -50px;
+}
+.advantage{
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Roboto Light";
+    font-size: 30px;
+}
+.col-sm-2{
+    padding-left: 10%;
+}
+.svg_images{
+    margin: auto;
+    text-align: center;
+}
+/*Slider#2 styles*/
+.customer{
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Roboto Light";
+    font-size: 30px;
+    background: #f9f9f9;
+}
+@keyframes customer_infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+.customer_infinite span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.customer_infinite img {
+    width: auto;
+    padding-left: 30px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+.customer_infinite img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.customer_infinite:hover div {
+    display: flex;
+    width: 100%;
+    animation-play-state: paused;
+}
+.customer_infinite div {
+    display: flex;
+    width: 100%;
+    animation: customer_infinite 50s linear infinite;
+}
+.customer_infinite {
+    margin: 100px auto;
+    border: 0px solid #000;
+    max-width: 40%;
+    overflow: hidden;
+}
+/*Footer styles*/
+.footer{
+    white-space: nowrap;
+    width: 100%;
+    background-color: #d0d0d0;
+    padding-bottom: 30%;
+}
+.footer_top{
+    font-size: 30px;
+    font-family: "OpenSans Bold";
+    color: rgb(0, 174, 239);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.footer a{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer a:hover{
+    cursor: pointer;
+    border-bottom: 1px double black;
+}
+.footer_bottom {
+     font-size: 11px;
+     font-family: "Roboto Light";
+     color: rgb(0, 0, 0);
+     line-height: 1.2;
+     text-align: left;
+     padding-left: 10%;
+ }
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    filter: grayscale(1);
+}
+.fa-youtube:hover{
+    filter: grayscale(0);
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    filter: grayscale(1);
+
+}
+.fa-facebook:hover{
+    filter: grayscale(0);
+}
+
+.fa-instagram{
+    background: linear-gradient(red,purple);
+    color: white;
+    filter: grayscale(1);
+}
+.fa-instagram:hover{
+    filter: grayscale(0);
+}
+.fa-odnoklassniki{
+    background: orange;
+    color: white;
+    filter: grayscale(1);
+}
+.fa-odnoklassniki:hover{
+    filter: grayscale(0);
+}
+.fa-vk{
+    background: blue;
+    color: white;
+    filter: grayscale(1);
+}
+.fa-vk:hover{
+    filter: grayscale(0);
+}
+
+
