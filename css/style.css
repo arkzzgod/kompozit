@@ -55,6 +55,7 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     color: #000 !important;
+    font-family: "Roboto Bold";
 }
 .contacts{
     background: #00aeef;
@@ -84,6 +85,7 @@ nav {
     margin-left: 60%;
     margin-top: 1%;
     font-size: 14px;
+    font-family: "Roboto Regular";
 }
 
 ul {
@@ -153,6 +155,7 @@ ul li ul li {
 ul li ul li a{
     font-size: 13px;
     white-space: nowrap;
+    font-family: "Roboto Light";
 }
 .dropdown{
     position: absolute;
@@ -212,7 +215,12 @@ ul li ul li a{
     margin-right: 60%;
     margin-bottom: 2%;
 }
-
+.slider_text_top{
+    font-family: "Roboto Medium";
+}
+.slider_text_bottom{
+    font-family: "Roboto Light";
+}
 .h1{
     text-align: center;
     padding-top: 100px;
@@ -255,6 +263,7 @@ ul li ul li a{
     border-color: rgb(0, 174, 239);
     justify-content: center;
     margin: auto;
+    font-family: "Roboto Medium";
 }
 .btn:hover{
     border-width: 1px;
@@ -272,6 +281,9 @@ ul li ul li a{
     padding-top: 100px;
     font-family: "Roboto Light";
     font-size: 30px;
+}
+.col-sm-3{
+    font-family: "Roboto Light";
 }
 .col-sm-2{
     padding-left: 10%;
@@ -312,20 +324,6 @@ ul li ul li a{
     background-color: #f9f9f9;
     margin-left: 2%;
 }
-/*@keyframes customer_infinite {*/
-/*    0% {*/
-/*        transform: translateX(0%);*/
-/*    }*/
-/*    100% {*/
-/*        transform: translateX(-80%);*/
-/*    }*/
-/*}*/
-.customer_infinite span {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-
-}
 
 .customer_infinite img {
     width: auto;
@@ -360,6 +358,7 @@ ul li ul li a{
     width: 100%;
     background-color: #d0d0d0;
     padding-bottom: 30%;
+    font-family: "Roboto Regular";
 }
 .footer_top{
     font-size: 30px;
